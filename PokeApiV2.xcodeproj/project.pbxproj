@@ -11,6 +11,16 @@
 		5BD67D71A3F6B7FD871685C5 /* Pods_PokeApiV2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCFF81905EB36588A7EF139E /* Pods_PokeApiV2.framework */; };
 		A30D89E824777990002DDE72 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30D89E724777990002DDE72 /* Coordinator.swift */; };
 		A32F64C7247756F700AFF797 /* BaseScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32F64C6247756F700AFF797 /* BaseScreenViewController.swift */; };
+		A3309FBD247A2F2900AE4E76 /* BaseScreenViewControllerExtesionConstraits.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3309FBC247A2F2900AE4E76 /* BaseScreenViewControllerExtesionConstraits.swift */; };
+		A3309FC9247A314B00AE4E76 /* CircularStd-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A3309FC1247A314A00AE4E76 /* CircularStd-BlackItalic.ttf */; };
+		A3309FCA247A314B00AE4E76 /* CircularStd-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A3309FC2247A314A00AE4E76 /* CircularStd-Black.ttf */; };
+		A3309FCB247A314B00AE4E76 /* CircularStd-BookItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A3309FC3247A314A00AE4E76 /* CircularStd-BookItalic.ttf */; };
+		A3309FCC247A314B00AE4E76 /* CircularStd-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A3309FC4247A314A00AE4E76 /* CircularStd-BoldItalic.ttf */; };
+		A3309FCD247A314B00AE4E76 /* CircularStd-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A3309FC5247A314A00AE4E76 /* CircularStd-Bold.ttf */; };
+		A3309FCE247A314B00AE4E76 /* CircularStd-Book.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A3309FC6247A314A00AE4E76 /* CircularStd-Book.ttf */; };
+		A3309FCF247A314B00AE4E76 /* CircularStd-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A3309FC7247A314B00AE4E76 /* CircularStd-MediumItalic.ttf */; };
+		A3309FD0247A314B00AE4E76 /* CircularStd-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A3309FC8247A314B00AE4E76 /* CircularStd-Medium.ttf */; };
+		A3309FD2247A336400AE4E76 /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3309FD1247A336400AE4E76 /* Fonts.swift */; };
 		A37702BD247773CB002EF33B /* BaseScreenCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A37702BC247773CB002EF33B /* BaseScreenCoordinator.swift */; };
 		A38D8A2624775B4500E4A38F /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = A38D8A2524775B4500E4A38F /* Localizable.strings */; };
 		A38D8A2824775B7900E4A38F /* colors.json in Resources */ = {isa = PBXBuildFile; fileRef = A38D8A2724775B7900E4A38F /* colors.json */; };
@@ -43,6 +53,16 @@
 		92F178CE5A6660AA6B7EA798 /* Pods-PokeApiV2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PokeApiV2.release.xcconfig"; path = "Target Support Files/Pods-PokeApiV2/Pods-PokeApiV2.release.xcconfig"; sourceTree = "<group>"; };
 		A30D89E724777990002DDE72 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		A32F64C6247756F700AFF797 /* BaseScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseScreenViewController.swift; sourceTree = "<group>"; };
+		A3309FBC247A2F2900AE4E76 /* BaseScreenViewControllerExtesionConstraits.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseScreenViewControllerExtesionConstraits.swift; sourceTree = "<group>"; };
+		A3309FC1247A314A00AE4E76 /* CircularStd-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CircularStd-BlackItalic.ttf"; sourceTree = "<group>"; };
+		A3309FC2247A314A00AE4E76 /* CircularStd-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CircularStd-Black.ttf"; sourceTree = "<group>"; };
+		A3309FC3247A314A00AE4E76 /* CircularStd-BookItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CircularStd-BookItalic.ttf"; sourceTree = "<group>"; };
+		A3309FC4247A314A00AE4E76 /* CircularStd-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CircularStd-BoldItalic.ttf"; sourceTree = "<group>"; };
+		A3309FC5247A314A00AE4E76 /* CircularStd-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CircularStd-Bold.ttf"; sourceTree = "<group>"; };
+		A3309FC6247A314A00AE4E76 /* CircularStd-Book.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CircularStd-Book.ttf"; sourceTree = "<group>"; };
+		A3309FC7247A314B00AE4E76 /* CircularStd-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CircularStd-MediumItalic.ttf"; sourceTree = "<group>"; };
+		A3309FC8247A314B00AE4E76 /* CircularStd-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CircularStd-Medium.ttf"; sourceTree = "<group>"; };
+		A3309FD1247A336400AE4E76 /* Fonts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
 		A37702BC247773CB002EF33B /* BaseScreenCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseScreenCoordinator.swift; sourceTree = "<group>"; };
 		A38D8A2524775B4500E4A38F /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		A38D8A2724775B7900E4A38F /* colors.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = colors.json; sourceTree = "<group>"; };
@@ -117,6 +137,7 @@
 			children = (
 				A32F64C6247756F700AFF797 /* BaseScreenViewController.swift */,
 				A3F9268D2478FAE3003F444C /* BaseScreenViewModel.swift */,
+				A3309FBE247A2F4200AE4E76 /* Extension */,
 			);
 			path = BaseScreen;
 			sourceTree = "<group>";
@@ -124,10 +145,56 @@
 		A32F64C22477555900AFF797 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				A3309FBF247A309200AE4E76 /* Fonts */,
 				A38D8A2324775AB200E4A38F /* Generators */,
 				A38D8A2424775ABF00E4A38F /* Generated */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		A3309FBB247A25FC00AE4E76 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		A3309FBE247A2F4200AE4E76 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				A3309FBC247A2F2900AE4E76 /* BaseScreenViewControllerExtesionConstraits.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		A3309FBF247A309200AE4E76 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				A3309FC0247A311500AE4E76 /* CircularStd */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		A3309FC0247A311500AE4E76 /* CircularStd */ = {
+			isa = PBXGroup;
+			children = (
+				A3309FC2247A314A00AE4E76 /* CircularStd-Black.ttf */,
+				A3309FC1247A314A00AE4E76 /* CircularStd-BlackItalic.ttf */,
+				A3309FC5247A314A00AE4E76 /* CircularStd-Bold.ttf */,
+				A3309FC4247A314A00AE4E76 /* CircularStd-BoldItalic.ttf */,
+				A3309FC6247A314A00AE4E76 /* CircularStd-Book.ttf */,
+				A3309FC3247A314A00AE4E76 /* CircularStd-BookItalic.ttf */,
+				A3309FC8247A314B00AE4E76 /* CircularStd-Medium.ttf */,
+				A3309FC7247A314B00AE4E76 /* CircularStd-MediumItalic.ttf */,
+			);
+			path = CircularStd;
+			sourceTree = "<group>";
+		};
+		A3309FD3247A3AD700AE4E76 /* Extesion */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extesion;
 			sourceTree = "<group>";
 		};
 		A37702BB247773AD002EF33B /* BaseScreen */ = {
@@ -176,6 +243,7 @@
 		A38D8A2424775ABF00E4A38F /* Generated */ = {
 			isa = PBXGroup;
 			children = (
+				A3309FD1247A336400AE4E76 /* Fonts.swift */,
 				A38D8A2A24775C2F00E4A38F /* Assets.swift */,
 				A38D8A2B24775C2F00E4A38F /* Colors.swift */,
 				A38D8A2924775C2F00E4A38F /* Strings.swift */,
@@ -212,6 +280,7 @@
 				A38D8A21247758FC00E4A38F /* Data */,
 				A3A5F8C62476E82500D95EC5 /* Models */,
 				A3A5F8C52476E81900D95EC5 /* Modules */,
+				A3309FBB247A25FC00AE4E76 /* Components */,
 				A3A5F8B12476E80900D95EC5 /* Info.plist */,
 			);
 			path = PokeApiV2;
@@ -247,6 +316,7 @@
 			children = (
 				A3A5F8A52476E80700D95EC5 /* SceneDelegate.swift */,
 				A3A5F8A32476E80700D95EC5 /* AppDelegate.swift */,
+				A3309FD3247A3AD700AE4E76 /* Extesion */,
 				A32F64C22477555900AFF797 /* Resources */,
 			);
 			path = Application;
@@ -352,10 +422,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A3309FD0247A314B00AE4E76 /* CircularStd-Medium.ttf in Resources */,
+				A3309FCE247A314B00AE4E76 /* CircularStd-Book.ttf in Resources */,
 				A3A5F8B02476E80900D95EC5 /* LaunchScreen.storyboard in Resources */,
 				A38D8A2624775B4500E4A38F /* Localizable.strings in Resources */,
+				A3309FCC247A314B00AE4E76 /* CircularStd-BoldItalic.ttf in Resources */,
 				A38D8A2824775B7900E4A38F /* colors.json in Resources */,
+				A3309FCF247A314B00AE4E76 /* CircularStd-MediumItalic.ttf in Resources */,
+				A3309FCB247A314B00AE4E76 /* CircularStd-BookItalic.ttf in Resources */,
+				A3309FCD247A314B00AE4E76 /* CircularStd-Bold.ttf in Resources */,
+				A3309FCA247A314B00AE4E76 /* CircularStd-Black.ttf in Resources */,
 				A3A5F8AD2476E80900D95EC5 /* Assets.xcassets in Resources */,
+				A3309FC9247A314B00AE4E76 /* CircularStd-BlackItalic.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -459,8 +537,10 @@
 				A38D8A2E24775C2F00E4A38F /* Colors.swift in Sources */,
 				A32F64C7247756F700AFF797 /* BaseScreenViewController.swift in Sources */,
 				A38D8A3024775F2700E4A38F /* DefaultContainer.swift in Sources */,
+				A3309FD2247A336400AE4E76 /* Fonts.swift in Sources */,
 				A38D8A2C24775C2F00E4A38F /* Strings.swift in Sources */,
 				A37702BD247773CB002EF33B /* BaseScreenCoordinator.swift in Sources */,
+				A3309FBD247A2F2900AE4E76 /* BaseScreenViewControllerExtesionConstraits.swift in Sources */,
 				A38D8A2D24775C2F00E4A38F /* Assets.swift in Sources */,
 				A3F9268E2478FAE3003F444C /* BaseScreenViewModel.swift in Sources */,
 				A3A5F8A62476E80700D95EC5 /* SceneDelegate.swift in Sources */,
@@ -627,7 +707,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.akira.PokeApiV2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -646,7 +726,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.akira.PokeApiV2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

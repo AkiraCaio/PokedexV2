@@ -10,15 +10,41 @@ import UIKit
 
 class BaseScreenViewController: UIViewController {
 
+    //MARK: CONFIG DEFAULT
     weak var coordinator: BaseScreenCoordinator?
-    lazy var 
+    var viewModel: BaseScreenViewModel!
     
+    //MARK: Content all screen
+    lazy var scrollView: UIScrollView = UIScrollView()
+    
+    //MARK: TOP SCREEN
+    lazy var superiorView: UIView = UIView()
+    
+    lazy var pokebolaImageView: UIImageView = UIImageView()
+    
+    lazy var mainTitleLabel: UILabel = UILabel()
+    
+    lazy var searchBar:UISearchBar = UISearchBar()
+    
+    lazy var selectMenuCollectionView = UICollectionView(frame: .zero, collectionViewLayout: UICollectionViewLayout())
+    
+    //MARK: Bottom Screen
+    lazy var bottomTableView: UITableView = UITableView(frame: .zero, style: .grouped)
+
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        self.view.backgroundColor = .red
+        
+        self.configScreen()
+        self.layout()
     }
     
-
-
+    fileprivate func configScreen() {
+        self.viewModel.configScrollView(scrollView: self.scrollView)
+        self.viewModel.configSuperiorView(view: self.superiorView)
+        self.viewModel.configPokebolaImageView(imageView: self.pokebolaImageView)
+        self.viewModel.configMainTitleLabel(label: self.mainTitleLabel)
+        self.viewModel.configSearchBar(searchBar: self.searchBar)
+    }
+    
+    
 }

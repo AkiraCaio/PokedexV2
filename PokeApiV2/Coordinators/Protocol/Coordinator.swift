@@ -9,7 +9,7 @@
 import UIKit
 
 protocol Coordinator: AnyObject {
-    var chieldCoordinators: [Coordinator] {get set }
+    var chieldCoordinators: [Coordinator] { get set }
     var navigationController: UINavigationController { get set }
     var defaultContainer: DefaultContainer { get set }
     

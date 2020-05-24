@@ -26,12 +26,9 @@ class BaseScreenCoordinator: NSObject, Coordinator {
     
     func start() {
         self.baseController = BaseScreenViewController()
+        self.baseController.viewModel = BaseScreenViewModel()
+        
         self.navigationController.pushViewController(self.baseController, animated: true)
     }
-    
-    func showPokedex() {
-        
-        self.navigationController.pushViewController(UIViewController(), animated: true)
-    }
-    
+
 }
