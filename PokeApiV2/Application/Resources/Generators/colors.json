@@ -15,4 +15,11 @@
     "baseScreenCategoriasElipseBackgroundColorLocations"        :   "#A06EB4",
     "baseScreenCategoriasElipseBackgroundColorTypeCharts"       :   "#D1938C",
     
+    "baseScreenCategoriasShadowPokedex"                         :   "#2CDAB1",
+    "baseScreenCategoriasShadowMoves"                           :   "#FA6555",
+    "baseScreenCategoriasShadowAbilities"                       :   "#429BED",
+    "baseScreenCategoriasShadowItems"                           :   "#F6C747",
+    "baseScreenCategoriasShadowLocations"                       :   "#9F5BBA",
+    "baseScreenCategoriasShadowTypeCharts"                      :   "#CA8179",
+    
 }

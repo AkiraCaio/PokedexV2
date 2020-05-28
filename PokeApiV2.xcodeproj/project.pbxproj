@@ -10,6 +10,8 @@
 		0FC52F015E3AC41EDC3087DD /* Pods_PokeApiV2Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E758FDBA783E95DCBB66E38 /* Pods_PokeApiV2Tests.framework */; };
 		5BD67D71A3F6B7FD871685C5 /* Pods_PokeApiV2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCFF81905EB36588A7EF139E /* Pods_PokeApiV2.framework */; };
 		A30D89E824777990002DDE72 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30D89E724777990002DDE72 /* Coordinator.swift */; };
+		A30DC1FF247FA3EA00AFF95D /* CategoriaCollectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30DC1FE247FA3EA00AFF95D /* CategoriaCollectionViewModel.swift */; };
+		A30DC202247FA9C000AFF95D /* CategoriaCollectionViewCellExtensionConstraits.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30DC201247FA9C000AFF95D /* CategoriaCollectionViewCellExtensionConstraits.swift */; };
 		A32F64C7247756F700AFF797 /* HomeScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32F64C6247756F700AFF797 /* HomeScreenViewController.swift */; };
 		A3309FBD247A2F2900AE4E76 /* HomeScreenViewModelExtesionConstraits.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3309FBC247A2F2900AE4E76 /* HomeScreenViewModelExtesionConstraits.swift */; };
 		A3309FC9247A314B00AE4E76 /* CircularStd-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A3309FC1247A314A00AE4E76 /* CircularStd-BlackItalic.ttf */; };
@@ -58,6 +60,8 @@
 		4E758FDBA783E95DCBB66E38 /* Pods_PokeApiV2Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PokeApiV2Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		92F178CE5A6660AA6B7EA798 /* Pods-PokeApiV2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PokeApiV2.release.xcconfig"; path = "Target Support Files/Pods-PokeApiV2/Pods-PokeApiV2.release.xcconfig"; sourceTree = "<group>"; };
 		A30D89E724777990002DDE72 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		A30DC1FE247FA3EA00AFF95D /* CategoriaCollectionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriaCollectionViewModel.swift; sourceTree = "<group>"; };
+		A30DC201247FA9C000AFF95D /* CategoriaCollectionViewCellExtensionConstraits.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriaCollectionViewCellExtensionConstraits.swift; sourceTree = "<group>"; };
 		A32F64C6247756F700AFF797 /* HomeScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenViewController.swift; sourceTree = "<group>"; };
 		A3309FBC247A2F2900AE4E76 /* HomeScreenViewModelExtesionConstraits.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenViewModelExtesionConstraits.swift; sourceTree = "<group>"; };
 		A3309FC1247A314A00AE4E76 /* CircularStd-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CircularStd-BlackItalic.ttf"; sourceTree = "<group>"; };
@@ -144,6 +148,14 @@
 			path = Protocol;
 			sourceTree = "<group>";
 		};
+		A30DC200247FA99C00AFF95D /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				A30DC201247FA9C000AFF95D /* CategoriaCollectionViewCellExtensionConstraits.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 		A32F64C12477554000AFF797 /* Home */ = {
 			isa = PBXGroup;
 			children = (
@@ -167,7 +179,7 @@
 		A3309FBB247A25FC00AE4E76 /* Components */ = {
 			isa = PBXGroup;
 			children = (
-				A3A0A178247F8A3000377AD7 /* BaseScreen */,
+				A3A0A178247F8A3000377AD7 /* CategoriaHome */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -215,8 +227,8 @@
 		A3309FD4247A569700AE4E76 /* Util */ = {
 			isa = PBXGroup;
 			children = (
-				A3A0A159247F71E600377AD7 /* Enum */,
 				A3309FD5247A56E000AE4E76 /*  ImageUtil.swift */,
+				A3A0A159247F71E600377AD7 /* Enum */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -283,12 +295,14 @@
 			path = Enum;
 			sourceTree = "<group>";
 		};
-		A3A0A178247F8A3000377AD7 /* BaseScreen */ = {
+		A3A0A178247F8A3000377AD7 /* CategoriaHome */ = {
 			isa = PBXGroup;
 			children = (
 				A3A0A179247F8A6900377AD7 /* CategoriaCollectionViewCell.swift */,
+				A30DC1FE247FA3EA00AFF95D /* CategoriaCollectionViewModel.swift */,
+				A30DC200247FA99C00AFF95D /* Extension */,
 			);
-			path = BaseScreen;
+			path = CategoriaHome;
 			sourceTree = "<group>";
 		};
 		A3A0A17B247F9B2900377AD7 /* BaseScreen */ = {
@@ -587,7 +601,9 @@
 				A3A5F8A42476E80700D95EC5 /* AppDelegate.swift in Sources */,
 				A32F64C7247756F700AFF797 /* HomeScreenViewController.swift in Sources */,
 				A38D8A3024775F2700E4A38F /* DefaultContainer.swift in Sources */,
+				A30DC202247FA9C000AFF95D /* CategoriaCollectionViewCellExtensionConstraits.swift in Sources */,
 				A3309FD2247A336400AE4E76 /* Fonts.swift in Sources */,
+				A30DC1FF247FA3EA00AFF95D /* CategoriaCollectionViewModel.swift in Sources */,
 				A3A0A17D247F9B4700377AD7 /* BaseViewController.swift in Sources */,
 				A38D8A2C24775C2F00E4A38F /* Strings.swift in Sources */,
 				A37702BD247773CB002EF33B /* BaseScreenCoordinator.swift in Sources */,

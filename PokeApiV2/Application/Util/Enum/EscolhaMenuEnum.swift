@@ -76,6 +76,20 @@ enum EscolhaMenuEnum {
         }
     }
     
-    
-    
+    func getShadowCardColor() -> CGColor {
+        switch self {
+            case .Pokedex:
+                return ColorName.baseScreenCategoriasShadowPokedex.color.cgColor
+            case .Moves:
+                return ColorName.baseScreenCategoriasShadowMoves.color.cgColor
+            case .Abilites:
+                return ColorName.baseScreenCategoriasShadowAbilities.color.cgColor
+            case .Items:
+                return ColorName.baseScreenCategoriasShadowItems.color.cgColor
+            case .Locations:
+                return ColorName.baseScreenCategoriasShadowLocations.color.cgColor
+            case .TypeCharts:
+                return ColorName.baseScreenCategoriasShadowTypeCharts.color.cgColor
+        }
+    }
 }

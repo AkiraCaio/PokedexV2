@@ -13,7 +13,7 @@ extension HomeScreenViewController: UICollectionViewDelegateFlowLayout, UICollec
     func configCollectionView() {
         self.selectMenuCollectionView.delegate = self
         self.selectMenuCollectionView.dataSource = self
-        self.selectMenuCollectionView.register(UICollectionViewCell.self, forCellWithReuseIdentifier: "cell")
+        self.selectMenuCollectionView.register(CategoriaCollectionViewCell.self, forCellWithReuseIdentifier: "cell")
     }
     
     func numberOfSections(in collectionView: UICollectionView) -> Int {
@@ -32,10 +32,11 @@ extension HomeScreenViewController: UICollectionViewDelegateFlowLayout, UICollec
         return CGSize(width: widht, height: height)
     }
     
-    //TODO: HERE
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath)
-        cell.backgroundColor = .red
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! CategoriaCollectionViewCell
+        
+        let viewModel = CategoriaCollectionViewModel(menuEscolhido: self.viewModel.menuChoice[indexPath.row])
+        cell.bind(viewModel: viewModel)
         
         return cell
     }

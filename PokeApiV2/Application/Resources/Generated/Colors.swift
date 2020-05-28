@@ -52,6 +52,24 @@ internal struct ColorName {
   /// <span style="display:block;width:3em;height:2em;border:1px solid black;background:#d1938c"></span>
   /// Alpha: 100% <br/> (0xd1938cff)
   internal static let baseScreenCategoriasElipseBackgroundColorTypeCharts = ColorName(rgbaValue: 0xd1938cff)
+  /// <span style="display:block;width:3em;height:2em;border:1px solid black;background:#429bed"></span>
+  /// Alpha: 100% <br/> (0x429bedff)
+  internal static let baseScreenCategoriasShadowAbilities = ColorName(rgbaValue: 0x429bedff)
+  /// <span style="display:block;width:3em;height:2em;border:1px solid black;background:#f6c747"></span>
+  /// Alpha: 100% <br/> (0xf6c747ff)
+  internal static let baseScreenCategoriasShadowItems = ColorName(rgbaValue: 0xf6c747ff)
+  /// <span style="display:block;width:3em;height:2em;border:1px solid black;background:#9f5bba"></span>
+  /// Alpha: 100% <br/> (0x9f5bbaff)
+  internal static let baseScreenCategoriasShadowLocations = ColorName(rgbaValue: 0x9f5bbaff)
+  /// <span style="display:block;width:3em;height:2em;border:1px solid black;background:#fa6555"></span>
+  /// Alpha: 100% <br/> (0xfa6555ff)
+  internal static let baseScreenCategoriasShadowMoves = ColorName(rgbaValue: 0xfa6555ff)
+  /// <span style="display:block;width:3em;height:2em;border:1px solid black;background:#2cdab1"></span>
+  /// Alpha: 100% <br/> (0x2cdab1ff)
+  internal static let baseScreenCategoriasShadowPokedex = ColorName(rgbaValue: 0x2cdab1ff)
+  /// <span style="display:block;width:3em;height:2em;border:1px solid black;background:#ca8179"></span>
+  /// Alpha: 100% <br/> (0xca8179ff)
+  internal static let baseScreenCategoriasShadowTypeCharts = ColorName(rgbaValue: 0xca8179ff)
   /// <span style="display:block;width:3em;height:2em;border:1px solid black;background:#f5f5f5"></span>
   /// Alpha: 100% <br/> (0xf5f5f5ff)
   internal static let baseScreenMainBackgroundColor = ColorName(rgbaValue: 0xf5f5f5ff)

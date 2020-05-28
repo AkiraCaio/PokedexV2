@@ -18,11 +18,13 @@
 
 // swiftlint:disable identifier_name line_length nesting type_body_length type_name
 internal enum Asset {
+  internal static let ellipse = ImageAsset(name: "Ellipse")
+  internal static let pokebolaCard = ImageAsset(name: "pokebolaCard")
   internal static let buscarIcon = ImageAsset(name: "BuscarIcon")
+  internal static let pokebolaTopMain = ImageAsset(name: "PokebolaTopMain")
   internal static let background = ImageAsset(name: "Background")
   internal static let memePokemon1 = ImageAsset(name: "memePokemon 1")
   internal static let pokeball = ImageAsset(name: "pokeball")
-  internal static let pokebolaTopMain = ImageAsset(name: "PokebolaTopMain")
 }
 // swiftlint:enable identifier_name line_length nesting type_body_length type_name
 
