@@ -1,4 +1,4 @@
 {
-    "baseScreenMainBackgroundColor"             : "#F5F5F5",
-    
+    "baseScreenMainBackgroundColor"             :   "#F5F5F5",
+    "baseScreenMainTextColor"                   :   "#303943",
 }

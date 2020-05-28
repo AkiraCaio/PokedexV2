@@ -22,6 +22,9 @@ internal struct ColorName {
   /// <span style="display:block;width:3em;height:2em;border:1px solid black;background:#f5f5f5"></span>
   /// Alpha: 100% <br/> (0xf5f5f5ff)
   internal static let baseScreenMainBackgroundColor = ColorName(rgbaValue: 0xf5f5f5ff)
+  /// <span style="display:block;width:3em;height:2em;border:1px solid black;background:#303943"></span>
+  /// Alpha: 100% <br/> (0x303943ff)
+  internal static let baseScreenMainTextColor = ColorName(rgbaValue: 0x303943ff)
 }
 // swiftlint:enable identifier_name line_length type_body_length
 

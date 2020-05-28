@@ -15,27 +15,21 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="NP4-SP-egJ">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="cXo-YA-Sm4">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="memePokemon 1" translatesAutoresizingMaskIntoConstraints="NO" id="0lM-NZ-mZe">
-                                <rect key="frame" x="63" y="409" width="288" height="273"/>
-                            </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pokeball" translatesAutoresizingMaskIntoConstraints="NO" id="2Sq-5C-Ux1">
-                                <rect key="frame" x="127.5" y="215" width="159" height="162"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="memePokemon 1" translatesAutoresizingMaskIntoConstraints="NO" id="wvf-Lz-cWJ">
+                                <rect key="frame" x="82.5" y="311.5" width="249" height="273"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstAttribute="bottom" secondItem="NP4-SP-egJ" secondAttribute="bottom" id="4nU-eo-Xrj"/>
-                            <constraint firstItem="2Sq-5C-Ux1" firstAttribute="centerX" secondItem="NP4-SP-egJ" secondAttribute="centerX" id="5fq-hk-1eK"/>
-                            <constraint firstItem="0lM-NZ-mZe" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="63" id="Ysh-4u-rEC"/>
-                            <constraint firstItem="NP4-SP-egJ" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="boe-lb-kWa"/>
-                            <constraint firstItem="NP4-SP-egJ" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="ftA-yY-EeV"/>
-                            <constraint firstAttribute="trailing" secondItem="NP4-SP-egJ" secondAttribute="trailing" id="nhM-KM-5uO"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="0lM-NZ-mZe" secondAttribute="bottom" constant="180" id="pNE-6E-8X7"/>
-                            <constraint firstItem="0lM-NZ-mZe" firstAttribute="top" secondItem="2Sq-5C-Ux1" secondAttribute="bottom" constant="32" id="r2B-P5-4wX"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="0lM-NZ-mZe" secondAttribute="trailing" constant="63" id="xcI-Bs-hx2"/>
+                            <constraint firstItem="wvf-Lz-cWJ" firstAttribute="centerX" secondItem="cXo-YA-Sm4" secondAttribute="centerX" id="OBA-Hu-zt5"/>
+                            <constraint firstItem="cXo-YA-Sm4" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="QjB-m5-9ZC"/>
+                            <constraint firstAttribute="bottom" secondItem="cXo-YA-Sm4" secondAttribute="bottom" id="WCz-uW-4EZ"/>
+                            <constraint firstItem="wvf-Lz-cWJ" firstAttribute="centerY" secondItem="cXo-YA-Sm4" secondAttribute="centerY" id="d4f-Z1-iEu"/>
+                            <constraint firstAttribute="trailing" secondItem="cXo-YA-Sm4" secondAttribute="trailing" id="mku-oi-gt6"/>
+                            <constraint firstItem="cXo-YA-Sm4" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="nLW-1F-VHp"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -48,6 +42,5 @@
     <resources>
         <image name="Background" width="375" height="811"/>
         <image name="memePokemon 1" width="249" height="273"/>
-        <image name="pokeball" width="159" height="162"/>
     </resources>
 </document>

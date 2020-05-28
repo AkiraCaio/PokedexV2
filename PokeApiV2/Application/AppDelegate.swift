@@ -17,7 +17,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        
+                
         self.defaultContainer = DefaultContainer()
         
         self.initCoordinator()
@@ -49,8 +49,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         baseScreenCoordinator?.start()
         
         self.window = UIWindow(frame: UIScreen.main.bounds)
+        window?.overrideUserInterfaceStyle = .light
         self.window?.makeKeyAndVisible()
-        self.window?.rootViewController = baseScreenCoordinator?.baseController
+        self.window?.rootViewController = baseScreenCoordinator?.navigationController
     }
 }
 

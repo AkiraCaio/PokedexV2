@@ -18,7 +18,7 @@ internal enum L10n {
       internal static let placeholder = L10n.tr("Localizable", "baseScreen.searchBar.placeholder")
     }
     internal enum Title {
-      /// What Pokemon are you looking for?
+      /// What Pokemon\nare you looking for?
       internal static let firstSection = L10n.tr("Localizable", "baseScreen.title.firstSection")
       /// Pokémon News
       internal static let secoundSection = L10n.tr("Localizable", "baseScreen.title.secoundSection")
