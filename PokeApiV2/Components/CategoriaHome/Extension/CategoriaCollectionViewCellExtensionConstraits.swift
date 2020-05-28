@@ -32,8 +32,8 @@ extension CategoriaCollectionViewCell {
         
         self.addSubview(self.elipseImageView)
         NSLayoutConstraint.activate([
-            self.elipseImageView.leftAnchor.constraint(equalTo: self.leftAnchor),
-            self.elipseImageView.topAnchor.constraint(equalTo: self.topAnchor),
+            self.elipseImageView.leftAnchor.constraint(equalTo: self.leftAnchor, constant: 1),
+            self.elipseImageView.topAnchor.constraint(equalTo: self.topAnchor, constant:  1),
         ])
     }
     

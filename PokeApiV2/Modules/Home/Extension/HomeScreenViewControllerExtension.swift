@@ -26,8 +26,8 @@ extension HomeScreenViewController: UICollectionViewDelegateFlowLayout, UICollec
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         
-        let widht = collectionView.frame.width / 2.3
-        let height = collectionView.frame.width / 6.3
+        let widht = collectionView.frame.width / 2.1
+        let height = collectionView.frame.width / 6.4
         
         return CGSize(width: widht, height: height)
     }
@@ -39,6 +39,14 @@ extension HomeScreenViewController: UICollectionViewDelegateFlowLayout, UICollec
         cell.bind(viewModel: viewModel)
         
         return cell
+    }
+
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+        return 12
+    }
+
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
+        return 10
     }
     
 }
