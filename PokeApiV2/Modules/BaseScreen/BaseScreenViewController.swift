@@ -30,12 +30,24 @@ class BaseScreenViewController: UIViewController {
     
     //MARK: Bottom Screen
     lazy var bottomTableView: UITableView = UITableView(frame: .zero, style: .grouped)
-
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        self.navigationController?.setNavigationBarHidden(true, animated: animated)
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        self.navigationController?.setNavigationBarHidden(false, animated: animated)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         self.configScreen()
         self.layout()
+        
+//        self.searchBar.clipsToBounds = true
     }
     
     fileprivate func configScreen() {

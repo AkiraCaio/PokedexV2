@@ -9,6 +9,7 @@
 import UIKit
 
 class BaseScreenViewModel {
+    fileprivate let searchTextFieldHeight: CGFloat = 45
     
     func configScrollView(scrollView: UIScrollView) {
         scrollView.backgroundColor = ColorName.baseScreenMainBackgroundColor.color
@@ -25,6 +26,7 @@ class BaseScreenViewModel {
     func configMainTitleLabel(label: UILabel) {
         label.text = L10n.BaseScreen.Title.firstSection
         label.font = UIFont(font: FontFamily.CircularStd.black, size: 30)
+        label.textColor = ColorName.baseScreenMainTextColor.color
         label.numberOfLines = 0
         label.textAlignment = .justified
     }
@@ -32,8 +34,23 @@ class BaseScreenViewModel {
     func configSearchBar(searchBar: UISearchBar) {
         searchBar.searchBarStyle = UISearchBar.Style.prominent
         searchBar.placeholder = L10n.BaseScreen.SearchBar.placeholder
+        
+        searchBar.placeholderFontAndColor(
+            font: UIFont(font: FontFamily.CircularStd.book, size: 14),
+            textColor: ColorName.baseScreenMainTextColor.color.withAlphaComponent(0.4)
+        )
+
         searchBar.backgroundImage = UIImage()
+        
         searchBar.setImage(Asset.buscarIcon.image, for: .search, state: .normal)
-        searchBar.isTranslucent = false
+        searchBar.searchTextPositionAdjustment = UIOffset(horizontal: 12, vertical: 0)
+        searchBar.setPositionAdjustment(UIOffset(horizontal: 18, vertical: 0), for: UISearchBar.Icon.search)
+                
+        //Logica para aumentar o tamanho do searchTextField, precisa primeiro aumentar o tamanho para depois arredondar os cantos
+        let image = ImageUtil.getImageWithColor(color: ColorName.baseScreenMainBackgroundColor.color, size: CGSize(width: 1, height: searchTextFieldHeight))
+        searchBar.setSearchFieldBackgroundImage(image, for: .normal)
+        
+        searchBar.searchTextFieldCornerRadius(cornerRadius: searchTextFieldHeight/2)
     }
+    
 }

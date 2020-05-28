@@ -23,10 +23,12 @@ extension BaseScreenViewController {
     fileprivate func configScrollView() {
         self.scrollView.translatesAutoresizingMaskIntoConstraints = false
         
+        self.scrollView.backgroundColor = .yellow
+        
         self.view.addSubview(self.scrollView)
         NSLayoutConstraint.activate([
-            self.scrollView.leadingAnchor.constraint(equalTo: self.view.leadingAnchor),
-            self.scrollView.trailingAnchor.constraint(equalTo: self.view.trailingAnchor),
+            self.scrollView.leftAnchor.constraint(equalTo: self.view.leftAnchor),
+            self.scrollView.rightAnchor.constraint(equalTo: self.view.rightAnchor),
             self.scrollView.topAnchor.constraint(equalTo: self.view.topAnchor),
             self.scrollView.bottomAnchor.constraint(equalTo: self.view.bottomAnchor),
         ])
@@ -36,11 +38,9 @@ extension BaseScreenViewController {
         self.superiorView.translatesAutoresizingMaskIntoConstraints = false
         
         self.scrollView.addSubview(self.superiorView)
-        //TODO: PRECISAR FAZER BOTTOM?
         NSLayoutConstraint.activate([
-            self.superiorView.widthAnchor.constraint(equalTo: scrollView.widthAnchor),
-            self.superiorView.topAnchor.constraint(equalTo: scrollView.topAnchor),
-            
+            self.superiorView.widthAnchor.constraint(equalTo: self.scrollView.widthAnchor),
+            self.superiorView.topAnchor.constraint(equalTo: self.view.topAnchor),            
         ])
         
     }
@@ -64,13 +64,20 @@ extension BaseScreenViewController {
             self.mainTitleLabel.leftAnchor.constraint(equalTo: self.superiorView.leftAnchor, constant: 26),
             self.mainTitleLabel.rightAnchor.constraint(equalTo: self.superiorView.rightAnchor, constant: -40),
             self.mainTitleLabel.topAnchor.constraint(equalTo: self.superiorView.topAnchor, constant: 116),
-
-            //TODO: Remover, usado apenas para visualizar com estava a superiorView
-            self.mainTitleLabel.bottomAnchor.constraint(equalTo: self.superiorView.bottomAnchor, constant: -32)
         ])
     }
     
     fileprivate func configSearchBar() {
+        
+        self.searchBar.translatesAutoresizingMaskIntoConstraints = false
+        
+        self.superiorView.addSubview(self.searchBar)
+        NSLayoutConstraint.activate([
+            self.searchBar.leftAnchor.constraint(equalTo: self.superiorView.leftAnchor, constant: 20),
+            self.searchBar.rightAnchor.constraint(equalTo: self.superiorView.rightAnchor, constant: -26),
+            self.searchBar.topAnchor.constraint(equalTo: self.mainTitleLabel.bottomAnchor, constant: 40),
+            self.searchBar.bottomAnchor.constraint(equalTo: self.superiorView.bottomAnchor, constant: -26),
+        ])
         
     }
     
