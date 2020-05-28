@@ -26,7 +26,10 @@ class BaseScreenViewController: UIViewController {
     
     lazy var searchBar:UISearchBar = UISearchBar()
     
-    lazy var selectMenuCollectionView = UICollectionView(frame: .zero, collectionViewLayout: UICollectionViewLayout())
+    lazy var selectMenuCollectionView: UICollectionView = {
+        let collectionView = UICollectionView(frame: .zero, collectionViewLayout: UICollectionViewFlowLayout())
+        return collectionView
+    }()
     
     //MARK: Bottom Screen
     lazy var bottomTableView: UITableView = UITableView(frame: .zero, style: .grouped)
@@ -44,10 +47,10 @@ class BaseScreenViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.configCollectionView()
         self.configScreen()
-        self.layout()
-        
-//        self.searchBar.clipsToBounds = true
+        self.configLayout()
+    
     }
     
     fileprivate func configScreen() {
@@ -56,7 +59,7 @@ class BaseScreenViewController: UIViewController {
         self.viewModel.configPokebolaImageView(imageView: self.pokebolaImageView)
         self.viewModel.configMainTitleLabel(label: self.mainTitleLabel)
         self.viewModel.configSearchBar(searchBar: self.searchBar)
+        self.viewModel.configCollectionView(collectionView: self.selectMenuCollectionView)
     }
-    
     
 }

@@ -6,10 +6,10 @@ xcassets:
     templateName: swift4
     output: Assets.swift
 colors:
-  inputs: Application/Resources/Generators/colors.json
-  outputs:
-    templateName: swift4
-    output: Colors.swift
+  - inputs: Application/Resources/Generators/colors.json
+    outputs:
+      templateName: swift4
+      output: Colors.swift
 strings:
   inputs: Application/Resources/Generators/Localizable.strings
   outputs:

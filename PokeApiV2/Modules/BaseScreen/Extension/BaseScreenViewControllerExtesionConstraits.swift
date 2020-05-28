@@ -9,14 +9,14 @@
 import UIKit
 
 extension BaseScreenViewController {
-    func layout() {
+    func configLayout() {
         self.configScrollView()
         
         self.configSuperiorView()
         self.configPokebolaImage()
         self.configMainTitle()
         self.configSearchBar()
-        self.configCollectionView()
+        self.configCollectionViewConstraint()
         
     }
     
@@ -76,13 +76,24 @@ extension BaseScreenViewController {
             self.searchBar.leftAnchor.constraint(equalTo: self.superiorView.leftAnchor, constant: 20),
             self.searchBar.rightAnchor.constraint(equalTo: self.superiorView.rightAnchor, constant: -26),
             self.searchBar.topAnchor.constraint(equalTo: self.mainTitleLabel.bottomAnchor, constant: 40),
-            self.searchBar.bottomAnchor.constraint(equalTo: self.superiorView.bottomAnchor, constant: -26),
         ])
         
     }
     
-    fileprivate func configCollectionView() {
+    fileprivate func configCollectionViewConstraint() {
+        let heightAdjust = self.view.frame.height / 3.8
         
+        self.selectMenuCollectionView.translatesAutoresizingMaskIntoConstraints = false
+        
+        self.superiorView.addSubview(self.selectMenuCollectionView)
+        NSLayoutConstraint.activate([
+            self.selectMenuCollectionView.leftAnchor.constraint(equalTo: self.superiorView.leftAnchor, constant: 26),
+            self.selectMenuCollectionView.rightAnchor.constraint(equalTo: self.superiorView.rightAnchor, constant: -26),
+            self.selectMenuCollectionView.topAnchor.constraint(equalTo: self.searchBar.bottomAnchor, constant: 40),
+            self.selectMenuCollectionView.heightAnchor.constraint(equalToConstant: heightAdjust),
+            	
+            self.selectMenuCollectionView.bottomAnchor.constraint(equalTo: self.superiorView.bottomAnchor, constant: -32),
+        ])
     }
     
     

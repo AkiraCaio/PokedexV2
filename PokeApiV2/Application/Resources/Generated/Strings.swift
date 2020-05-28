@@ -13,6 +13,22 @@ import Foundation
 internal enum L10n {
 
   internal enum BaseScreen {
+    internal enum Categoria {
+      internal enum Titulo {
+        /// Abilities
+        internal static let abilities = L10n.tr("Localizable", "baseScreen.categoria.titulo.abilities")
+        /// Items
+        internal static let items = L10n.tr("Localizable", "baseScreen.categoria.titulo.items")
+        /// Locations
+        internal static let locations = L10n.tr("Localizable", "baseScreen.categoria.titulo.locations")
+        /// Moves
+        internal static let moves = L10n.tr("Localizable", "baseScreen.categoria.titulo.moves")
+        /// Pokedex
+        internal static let pokedex = L10n.tr("Localizable", "baseScreen.categoria.titulo.pokedex")
+        /// Type Charts
+        internal static let typeCharts = L10n.tr("Localizable", "baseScreen.categoria.titulo.typeCharts")
+      }
+    }
     internal enum SearchBar {
       /// Search Pokemon, Move, Ability etc
       internal static let placeholder = L10n.tr("Localizable", "baseScreen.searchBar.placeholder")

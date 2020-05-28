@@ -1,4 +1,18 @@
 {
-    "baseScreenMainBackgroundColor"             :   "#F5F5F5",
-    "baseScreenMainTextColor"                   :   "#303943",
+    "baseScreenMainBackgroundColor"                             :   "#F5F5F5",
+    "baseScreenMainTextColor"                                   :   "#303943",
+    
+    "baseScreenCategoriasBackgroundColorPokedex"                :   "#4FC1A6",
+    "baseScreenCategoriasBackgroundColorMoves"                  :   "#F7786B",
+    "baseScreenCategoriasBackgroundColorAbilities"              :   "#58ABF6",
+    "baseScreenCategoriasBackgroundColorItems"                  :   "#FFCE4B",
+    "baseScreenCategoriasBackgroundColorLocations"              :   "#7C538C",
+    "baseScreenCategoriasBackgroundColorTypeCharts"             :   "#B1736C",
+    
+    "baseScreenCategoriasElipseBackgroundColorPokedex"          :   "#6AF3CA",
+    "baseScreenCategoriasElipseBackgroundColorMoves"            :   "#FF8D82",
+    "baseScreenCategoriasElipseBackgroundColorAbilities"        :   "#77C4FE",
+    "baseScreenCategoriasElipseBackgroundColorLocations"        :   "#A06EB4",
+    "baseScreenCategoriasElipseBackgroundColorTypeCharts"       :   "#D1938C",
+    
 }

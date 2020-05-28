@@ -11,6 +11,8 @@ import UIKit
 class BaseScreenViewModel {
     fileprivate let searchTextFieldHeight: CGFloat = 45
     
+    let menuChoice: [EscolhaMenuEnum] = [.Pokedex, .Moves, .Abilites, .Items, .Locations, .TypeCharts]
+    
     func configScrollView(scrollView: UIScrollView) {
         scrollView.backgroundColor = ColorName.baseScreenMainBackgroundColor.color
     }
@@ -50,11 +52,22 @@ class BaseScreenViewModel {
         searchBar.searchTextPositionAdjustment = UIOffset(horizontal: 12, vertical: 0)
         searchBar.setPositionAdjustment(UIOffset(horizontal: 18, vertical: 0), for: UISearchBar.Icon.search)
                 
-        //Logica para aumentar o tamanho do searchTextField, precisa primeiro aumentar o tamanho para depois arredondar os cantos
-        let image = ImageUtil.getImageWithColor(color: ColorName.baseScreenMainBackgroundColor.color, size: CGSize(width: 1, height: searchTextFieldHeight))
+//        Logica para aumentar o tamanho do searchTextField, precisa primeiro aumentar o tamanho para depois arredondar os cantos
+        let image = ImageUtil.getImageWithColor (
+            color: ColorName.baseScreenMainBackgroundColor.color,
+            size: CGSize (
+                width: 1,
+                height: searchTextFieldHeight
+            )
+        )
         searchBar.setSearchFieldBackgroundImage(image, for: .normal)
         
         searchBar.searchTextFieldCornerRadius(cornerRadius: searchTextFieldHeight/2)
+    }
+    
+    func configCollectionView(collectionView: UICollectionView) {
+        collectionView.backgroundColor = .clear
+        
     }
     
 }

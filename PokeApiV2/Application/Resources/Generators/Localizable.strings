@@ -2,3 +2,12 @@
 "baseScreen.title.secoundSection" = "Pokémon News";
 
 "baseScreen.searchBar.placeholder" = "Search Pokemon, Move, Ability etc";
+
+"baseScreen.categoria.titulo.pokedex" = "Pokedex";
+"baseScreen.categoria.titulo.abilities" = "Abilities";
+"baseScreen.categoria.titulo.moves" = "Moves";
+"baseScreen.categoria.titulo.items" = "Items";
+"baseScreen.categoria.titulo.locations" = "Locations";
+"baseScreen.categoria.titulo.typeCharts" = "Type Charts";
+
+
