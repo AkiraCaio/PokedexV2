@@ -10,8 +10,8 @@
 		0FC52F015E3AC41EDC3087DD /* Pods_PokeApiV2Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E758FDBA783E95DCBB66E38 /* Pods_PokeApiV2Tests.framework */; };
 		5BD67D71A3F6B7FD871685C5 /* Pods_PokeApiV2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCFF81905EB36588A7EF139E /* Pods_PokeApiV2.framework */; };
 		A30D89E824777990002DDE72 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30D89E724777990002DDE72 /* Coordinator.swift */; };
-		A32F64C7247756F700AFF797 /* BaseScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32F64C6247756F700AFF797 /* BaseScreenViewController.swift */; };
-		A3309FBD247A2F2900AE4E76 /* BaseScreenViewControllerExtesionConstraits.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3309FBC247A2F2900AE4E76 /* BaseScreenViewControllerExtesionConstraits.swift */; };
+		A32F64C7247756F700AFF797 /* HomeScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32F64C6247756F700AFF797 /* HomeScreenViewController.swift */; };
+		A3309FBD247A2F2900AE4E76 /* HomeScreenViewModelExtesionConstraits.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3309FBC247A2F2900AE4E76 /* HomeScreenViewModelExtesionConstraits.swift */; };
 		A3309FC9247A314B00AE4E76 /* CircularStd-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A3309FC1247A314A00AE4E76 /* CircularStd-BlackItalic.ttf */; };
 		A3309FCA247A314B00AE4E76 /* CircularStd-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A3309FC2247A314A00AE4E76 /* CircularStd-Black.ttf */; };
 		A3309FCB247A314B00AE4E76 /* CircularStd-BookItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A3309FC3247A314A00AE4E76 /* CircularStd-BookItalic.ttf */; };
@@ -31,14 +31,15 @@
 		A3A0A158247F643500377AD7 /* UISearchBarExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A0A157247F643500377AD7 /* UISearchBarExtension.swift */; };
 		A3A0A15B247F720500377AD7 /* EscolhaMenuEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A0A15A247F720500377AD7 /* EscolhaMenuEnum.swift */; };
 		A3A0A175247F840D00377AD7 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A0A174247F840D00377AD7 /* Colors.swift */; };
-		A3A0A177247F895000377AD7 /* BaseSreenViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A0A176247F895000377AD7 /* BaseSreenViewControllerExtension.swift */; };
+		A3A0A177247F895000377AD7 /* HomeScreenViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A0A176247F895000377AD7 /* HomeScreenViewControllerExtension.swift */; };
 		A3A0A17A247F8A6900377AD7 /* CategoriaCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A0A179247F8A6900377AD7 /* CategoriaCollectionViewCell.swift */; };
+		A3A0A17D247F9B4700377AD7 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A0A17C247F9B4700377AD7 /* BaseViewController.swift */; };
 		A3A5F8A42476E80700D95EC5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A5F8A32476E80700D95EC5 /* AppDelegate.swift */; };
 		A3A5F8A62476E80700D95EC5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A5F8A52476E80700D95EC5 /* SceneDelegate.swift */; };
 		A3A5F8AD2476E80900D95EC5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A3A5F8AC2476E80900D95EC5 /* Assets.xcassets */; };
 		A3A5F8B02476E80900D95EC5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3A5F8AE2476E80900D95EC5 /* LaunchScreen.storyboard */; };
 		A3A5F8BB2476E80900D95EC5 /* PokeApiV2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A5F8BA2476E80900D95EC5 /* PokeApiV2Tests.swift */; };
-		A3F9268E2478FAE3003F444C /* BaseScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F9268D2478FAE3003F444C /* BaseScreenViewModel.swift */; };
+		A3F9268E2478FAE3003F444C /* HomeScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F9268D2478FAE3003F444C /* HomeScreenViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,8 +58,8 @@
 		4E758FDBA783E95DCBB66E38 /* Pods_PokeApiV2Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PokeApiV2Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		92F178CE5A6660AA6B7EA798 /* Pods-PokeApiV2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PokeApiV2.release.xcconfig"; path = "Target Support Files/Pods-PokeApiV2/Pods-PokeApiV2.release.xcconfig"; sourceTree = "<group>"; };
 		A30D89E724777990002DDE72 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
-		A32F64C6247756F700AFF797 /* BaseScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseScreenViewController.swift; sourceTree = "<group>"; };
-		A3309FBC247A2F2900AE4E76 /* BaseScreenViewControllerExtesionConstraits.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseScreenViewControllerExtesionConstraits.swift; sourceTree = "<group>"; };
+		A32F64C6247756F700AFF797 /* HomeScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenViewController.swift; sourceTree = "<group>"; };
+		A3309FBC247A2F2900AE4E76 /* HomeScreenViewModelExtesionConstraits.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenViewModelExtesionConstraits.swift; sourceTree = "<group>"; };
 		A3309FC1247A314A00AE4E76 /* CircularStd-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CircularStd-BlackItalic.ttf"; sourceTree = "<group>"; };
 		A3309FC2247A314A00AE4E76 /* CircularStd-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CircularStd-Black.ttf"; sourceTree = "<group>"; };
 		A3309FC3247A314A00AE4E76 /* CircularStd-BookItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CircularStd-BookItalic.ttf"; sourceTree = "<group>"; };
@@ -78,8 +79,9 @@
 		A3A0A157247F643500377AD7 /* UISearchBarExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UISearchBarExtension.swift; sourceTree = "<group>"; };
 		A3A0A15A247F720500377AD7 /* EscolhaMenuEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EscolhaMenuEnum.swift; sourceTree = "<group>"; };
 		A3A0A174247F840D00377AD7 /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
-		A3A0A176247F895000377AD7 /* BaseSreenViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseSreenViewControllerExtension.swift; sourceTree = "<group>"; };
+		A3A0A176247F895000377AD7 /* HomeScreenViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenViewControllerExtension.swift; sourceTree = "<group>"; };
 		A3A0A179247F8A6900377AD7 /* CategoriaCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriaCollectionViewCell.swift; sourceTree = "<group>"; };
+		A3A0A17C247F9B4700377AD7 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		A3A5F8A02476E80700D95EC5 /* PokeApiV2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PokeApiV2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3A5F8A32476E80700D95EC5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A3A5F8A52476E80700D95EC5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -89,7 +91,7 @@
 		A3A5F8B62476E80900D95EC5 /* PokeApiV2Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PokeApiV2Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3A5F8BA2476E80900D95EC5 /* PokeApiV2Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokeApiV2Tests.swift; sourceTree = "<group>"; };
 		A3A5F8BC2476E80900D95EC5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A3F9268D2478FAE3003F444C /* BaseScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseScreenViewModel.swift; sourceTree = "<group>"; };
+		A3F9268D2478FAE3003F444C /* HomeScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenViewModel.swift; sourceTree = "<group>"; };
 		B7691AC13F1E25AB3C5B1299 /* Pods-PokeApiV2Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PokeApiV2Tests.debug.xcconfig"; path = "Target Support Files/Pods-PokeApiV2Tests/Pods-PokeApiV2Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		FCFF81905EB36588A7EF139E /* Pods_PokeApiV2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PokeApiV2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -142,14 +144,14 @@
 			path = Protocol;
 			sourceTree = "<group>";
 		};
-		A32F64C12477554000AFF797 /* BaseScreen */ = {
+		A32F64C12477554000AFF797 /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				A32F64C6247756F700AFF797 /* BaseScreenViewController.swift */,
-				A3F9268D2478FAE3003F444C /* BaseScreenViewModel.swift */,
+				A32F64C6247756F700AFF797 /* HomeScreenViewController.swift */,
+				A3F9268D2478FAE3003F444C /* HomeScreenViewModel.swift */,
 				A3309FBE247A2F4200AE4E76 /* Extension */,
 			);
-			path = BaseScreen;
+			path = Home;
 			sourceTree = "<group>";
 		};
 		A32F64C22477555900AFF797 /* Resources */ = {
@@ -173,8 +175,8 @@
 		A3309FBE247A2F4200AE4E76 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
-				A3A0A176247F895000377AD7 /* BaseSreenViewControllerExtension.swift */,
-				A3309FBC247A2F2900AE4E76 /* BaseScreenViewControllerExtesionConstraits.swift */,
+				A3A0A176247F895000377AD7 /* HomeScreenViewControllerExtension.swift */,
+				A3309FBC247A2F2900AE4E76 /* HomeScreenViewModelExtesionConstraits.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -289,6 +291,14 @@
 			path = BaseScreen;
 			sourceTree = "<group>";
 		};
+		A3A0A17B247F9B2900377AD7 /* BaseScreen */ = {
+			isa = PBXGroup;
+			children = (
+				A3A0A17C247F9B4700377AD7 /* BaseViewController.swift */,
+			);
+			path = BaseScreen;
+			sourceTree = "<group>";
+		};
 		A3A5F8972476E80700D95EC5 = {
 			isa = PBXGroup;
 			children = (
@@ -337,7 +347,8 @@
 			isa = PBXGroup;
 			children = (
 				A3F9268B2478F6FB003F444C /* LaunchScreen */,
-				A32F64C12477554000AFF797 /* BaseScreen */,
+				A3A0A17B247F9B2900377AD7 /* BaseScreen */,
+				A32F64C12477554000AFF797 /* Home */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -574,19 +585,20 @@
 			files = (
 				A3A0A17A247F8A6900377AD7 /* CategoriaCollectionViewCell.swift in Sources */,
 				A3A5F8A42476E80700D95EC5 /* AppDelegate.swift in Sources */,
-				A32F64C7247756F700AFF797 /* BaseScreenViewController.swift in Sources */,
+				A32F64C7247756F700AFF797 /* HomeScreenViewController.swift in Sources */,
 				A38D8A3024775F2700E4A38F /* DefaultContainer.swift in Sources */,
 				A3309FD2247A336400AE4E76 /* Fonts.swift in Sources */,
+				A3A0A17D247F9B4700377AD7 /* BaseViewController.swift in Sources */,
 				A38D8A2C24775C2F00E4A38F /* Strings.swift in Sources */,
 				A37702BD247773CB002EF33B /* BaseScreenCoordinator.swift in Sources */,
-				A3309FBD247A2F2900AE4E76 /* BaseScreenViewControllerExtesionConstraits.swift in Sources */,
-				A3A0A177247F895000377AD7 /* BaseSreenViewControllerExtension.swift in Sources */,
+				A3309FBD247A2F2900AE4E76 /* HomeScreenViewModelExtesionConstraits.swift in Sources */,
+				A3A0A177247F895000377AD7 /* HomeScreenViewControllerExtension.swift in Sources */,
 				A38D8A2D24775C2F00E4A38F /* Assets.swift in Sources */,
 				A3A0A175247F840D00377AD7 /* Colors.swift in Sources */,
 				A3A0A158247F643500377AD7 /* UISearchBarExtension.swift in Sources */,
 				A3A0A15B247F720500377AD7 /* EscolhaMenuEnum.swift in Sources */,
 				A3309FD6247A56E000AE4E76 /*  ImageUtil.swift in Sources */,
-				A3F9268E2478FAE3003F444C /* BaseScreenViewModel.swift in Sources */,
+				A3F9268E2478FAE3003F444C /* HomeScreenViewModel.swift in Sources */,
 				A3A5F8A62476E80700D95EC5 /* SceneDelegate.swift in Sources */,
 				A30D89E824777990002DDE72 /* Coordinator.swift in Sources */,
 			);

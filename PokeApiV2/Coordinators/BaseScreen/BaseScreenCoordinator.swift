@@ -17,7 +17,7 @@ class BaseScreenCoordinator: NSObject, Coordinator {
     var defaultContainer: DefaultContainer
     
     //All controller going here
-    var baseController: BaseScreenViewController!
+    var baseController: HomeScreenViewController!
     
     init(navigationController: UINavigationController, defaultContainer: DefaultContainer) {
         self.navigationController = navigationController
@@ -25,8 +25,8 @@ class BaseScreenCoordinator: NSObject, Coordinator {
     }
     
     func start() {
-        self.baseController = BaseScreenViewController()
-        self.baseController.viewModel = BaseScreenViewModel()
+        self.baseController = HomeScreenViewController()
+        self.baseController.viewModel = HomeScreenViewModel()
         
         self.navigationController.pushViewController(self.baseController, animated: true)
     }

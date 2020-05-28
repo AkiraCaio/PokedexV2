@@ -1,5 +1,5 @@
 //
-//  BaseScreenViewControllerExtesionConstraits.swift
+//  HomeScreenViewControllerExtesionConstraits.swift
 //  PokeApiV2
 //
 //  Created by Caio Pinho on 24/05/20.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-extension BaseScreenViewController {
+extension HomeScreenViewController {
     func configLayout() {
         self.configScrollView()
         

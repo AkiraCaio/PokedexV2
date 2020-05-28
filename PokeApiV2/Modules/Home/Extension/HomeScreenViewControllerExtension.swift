@@ -1,5 +1,5 @@
 //
-//  BaseScreenViewController.swift
+//  HomeScreenViewControllerExtension.swift
 //  PokeApiV2
 //
 //  Created by Caio Pinho on 28/05/20.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-extension BaseScreenViewController: UICollectionViewDelegateFlowLayout, UICollectionViewDataSource {
+extension HomeScreenViewController: UICollectionViewDelegateFlowLayout, UICollectionViewDataSource {
     
     func configCollectionView() {
         self.selectMenuCollectionView.delegate = self

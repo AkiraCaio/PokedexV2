@@ -1,5 +1,5 @@
 //
-//  BaseScreenViewController.swift
+//  HomeScreenViewController.swift
 //  PokeApiV2
 //
 //  Created by Caio Pinho on 21/05/20.
@@ -8,11 +8,11 @@
 
 import UIKit
 
-class BaseScreenViewController: UIViewController {
+class HomeScreenViewController: BaseViewController	 {
 
     //MARK: CONFIG DEFAULT
     weak var coordinator: BaseScreenCoordinator?
-    var viewModel: BaseScreenViewModel!
+    var viewModel: HomeScreenViewModel!
     
     //MARK: Content all screen
     lazy var scrollView: UIScrollView = UIScrollView()

@@ -1,5 +1,5 @@
 //
-//  BaseScreenViewModel.swift
+//  HomeScreenViewModel.swift
 //  PokeApiV2
 //
 //  Created by Caio Pinho on 23/05/20.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class BaseScreenViewModel {
+class HomeScreenViewModel {
     fileprivate let searchTextFieldHeight: CGFloat = 45
     
     let menuChoice: [EscolhaMenuEnum] = [.Pokedex, .Moves, .Abilites, .Items, .Locations, .TypeCharts]
