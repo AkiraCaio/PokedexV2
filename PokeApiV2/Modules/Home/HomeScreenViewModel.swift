@@ -9,7 +9,6 @@
 import UIKit
 
 class HomeScreenViewModel {
-    fileprivate let searchTextFieldHeight: CGFloat = 45
     
     let menuChoice: [EscolhaMenuEnum] = [.Pokedex, .Moves, .Abilites, .Items, .Locations, .TypeCharts]
     
@@ -38,6 +37,8 @@ class HomeScreenViewModel {
     }
     
     func configSearchBar(searchBar: UISearchBar) {
+        let searchTextFieldHeight: CGFloat = 45
+        
         searchBar.searchBarStyle = UISearchBar.Style.prominent
         searchBar.placeholder = L10n.BaseScreen.SearchBar.placeholder
         

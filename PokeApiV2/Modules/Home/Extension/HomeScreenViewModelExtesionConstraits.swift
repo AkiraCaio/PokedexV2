@@ -22,9 +22,7 @@ extension HomeScreenViewController {
     
     fileprivate func configScrollView() {
         self.scrollView.translatesAutoresizingMaskIntoConstraints = false
-        
-        self.scrollView.backgroundColor = .yellow
-        
+                
         self.view.addSubview(self.scrollView)
         NSLayoutConstraint.activate([
             self.scrollView.leftAnchor.constraint(equalTo: self.view.leftAnchor),
