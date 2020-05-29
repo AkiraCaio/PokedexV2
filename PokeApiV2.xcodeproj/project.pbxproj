@@ -26,6 +26,8 @@
 		A3309FD6247A56E000AE4E76 /*  ImageUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3309FD5247A56E000AE4E76 /*  ImageUtil.swift */; };
 		A37702BD247773CB002EF33B /* BaseScreenCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A37702BC247773CB002EF33B /* BaseScreenCoordinator.swift */; };
 		A3891A6024809A6000A3B057 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3891A5F24809A6000A3B057 /* UIViewExtension.swift */; };
+		A3891A632480A2A500A3B057 /* NewsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3891A622480A2A500A3B057 /* NewsModel.swift */; };
+		A3891A652480A43600A3B057 /* NewsUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3891A642480A43600A3B057 /* NewsUtil.swift */; };
 		A38D8A2624775B4500E4A38F /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = A38D8A2524775B4500E4A38F /* Localizable.strings */; };
 		A38D8A2824775B7900E4A38F /* colors.json in Resources */ = {isa = PBXBuildFile; fileRef = A38D8A2724775B7900E4A38F /* colors.json */; };
 		A38D8A2C24775C2F00E4A38F /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38D8A2924775C2F00E4A38F /* Strings.swift */; };
@@ -77,6 +79,8 @@
 		A3309FD5247A56E000AE4E76 /*  ImageUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = " ImageUtil.swift"; sourceTree = "<group>"; };
 		A37702BC247773CB002EF33B /* BaseScreenCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseScreenCoordinator.swift; sourceTree = "<group>"; };
 		A3891A5F24809A6000A3B057 /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
+		A3891A622480A2A500A3B057 /* NewsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsModel.swift; sourceTree = "<group>"; };
+		A3891A642480A43600A3B057 /* NewsUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsUtil.swift; sourceTree = "<group>"; };
 		A38D8A2524775B4500E4A38F /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		A38D8A2724775B7900E4A38F /* colors.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = colors.json; sourceTree = "<group>"; };
 		A38D8A2924775C2F00E4A38F /* Strings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
@@ -232,6 +236,7 @@
 			children = (
 				A3309FD5247A56E000AE4E76 /*  ImageUtil.swift */,
 				A3A0A159247F71E600377AD7 /* Enum */,
+				A3891A642480A43600A3B057 /* NewsUtil.swift */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -242,6 +247,14 @@
 				A37702BC247773CB002EF33B /* BaseScreenCoordinator.swift */,
 			);
 			path = BaseScreen;
+			sourceTree = "<group>";
+		};
+		A3891A612480A1A200A3B057 /* News */ = {
+			isa = PBXGroup;
+			children = (
+				A3891A622480A2A500A3B057 /* NewsModel.swift */,
+			);
+			path = News;
 			sourceTree = "<group>";
 		};
 		A38D8A1F247758B800E4A38F /* Container */ = {
@@ -373,6 +386,7 @@
 		A3A5F8C62476E82500D95EC5 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				A3891A612480A1A200A3B057 /* News */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -606,6 +620,7 @@
 				A38D8A3024775F2700E4A38F /* DefaultContainer.swift in Sources */,
 				A30DC202247FA9C000AFF95D /* CategoriaCollectionViewCellExtensionConstraits.swift in Sources */,
 				A3309FD2247A336400AE4E76 /* Fonts.swift in Sources */,
+				A3891A632480A2A500A3B057 /* NewsModel.swift in Sources */,
 				A30DC1FF247FA3EA00AFF95D /* CategoriaCollectionViewModel.swift in Sources */,
 				A3A0A17D247F9B4700377AD7 /* BaseViewController.swift in Sources */,
 				A38D8A2C24775C2F00E4A38F /* Strings.swift in Sources */,
@@ -617,6 +632,7 @@
 				A3A0A158247F643500377AD7 /* UISearchBarExtension.swift in Sources */,
 				A3A0A15B247F720500377AD7 /* EscolhaMenuEnum.swift in Sources */,
 				A3309FD6247A56E000AE4E76 /*  ImageUtil.swift in Sources */,
+				A3891A652480A43600A3B057 /* NewsUtil.swift in Sources */,
 				A3F9268E2478FAE3003F444C /* HomeScreenViewModel.swift in Sources */,
 				A3891A6024809A6000A3B057 /* UIViewExtension.swift in Sources */,
 				A3A5F8A62476E80700D95EC5 /* SceneDelegate.swift in Sources */,

@@ -8,18 +8,18 @@
 
 import UIKit
 
-extension HomeScreenViewController: UICollectionViewDelegateFlowLayout, UICollectionViewDataSource {
+extension HomeScreenViewController: UICollectionViewDelegateFlowLayout, UICollectionViewDataSource, UITableViewDelegate, UITableViewDataSource {
     func configDelegateAndRegisterCells() {
-    func configCollectionView() {
         self.selectMenuCollectionView.delegate = self
         self.selectMenuCollectionView.dataSource = self
         self.selectMenuCollectionView.register(CategoriaCollectionViewCell.self, forCellWithReuseIdentifier: "cell")
+        
+        self.bottomTableView.delegate = self
+        self.bottomTableView.dataSource = self
+        self.bottomTableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
     }
     
-    func numberOfSections(in collectionView: UICollectionView) -> Int {
-        return 1
-    }
-    
+    //MARK: CollectionView
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         self.viewModel.menuChoice.count
     }
@@ -56,6 +56,7 @@ extension HomeScreenViewController: UICollectionViewDelegateFlowLayout, UICollec
         lastSelectedIndexPathCollectionView = indexPath
     }
     
+
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
         return 12
     }
@@ -68,4 +69,13 @@ extension HomeScreenViewController: UICollectionViewDelegateFlowLayout, UICollec
         return UIEdgeInsets(top: 8, left: 26, bottom: 8, right: 26)
     }
     
+    //MARK: TableView
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 50
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+        return cell
+    }
 }

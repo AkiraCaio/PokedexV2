@@ -17,7 +17,7 @@ extension HomeScreenViewController {
         self.configMainTitle()
         self.configSearchBar()
         self.configCollectionViewConstraint()
-        
+        self.configTableViewConstraint()
     }
     
     fileprivate func configScrollView() {
@@ -37,8 +37,9 @@ extension HomeScreenViewController {
         
         self.scrollView.addSubview(self.superiorView)
         NSLayoutConstraint.activate([
+            self.superiorView.leftAnchor.constraint(equalTo: self.scrollView.leftAnchor),
+            self.superiorView.topAnchor.constraint(equalTo: self.scrollView.topAnchor, constant: -50),
             self.superiorView.widthAnchor.constraint(equalTo: self.scrollView.widthAnchor),
-            self.superiorView.topAnchor.constraint(equalTo: self.view.topAnchor),            
         ])
         
     }
@@ -91,6 +92,21 @@ extension HomeScreenViewController {
             self.selectMenuCollectionView.heightAnchor.constraint(equalToConstant: heightAdjust),
             	
             self.selectMenuCollectionView.bottomAnchor.constraint(equalTo: self.superiorView.bottomAnchor, constant: -32),
+        ])
+    }
+    
+    fileprivate func configTableViewConstraint() {
+        self.bottomTableView.translatesAutoresizingMaskIntoConstraints = false
+        
+        self.scrollView.addSubview(self.bottomTableView)
+        NSLayoutConstraint.activate([
+            self.bottomTableView.topAnchor.constraint(equalTo: self.superiorView.bottomAnchor, constant: 32),
+            self.bottomTableView.leftAnchor.constraint(equalTo: self.view.leftAnchor, constant: 26),
+            self.bottomTableView.rightAnchor.constraint(equalTo: self.view.rightAnchor, constant: -26),
+            self.bottomTableView.heightAnchor.constraint(equalToConstant: 300),
+            
+            self.bottomTableView.bottomAnchor.constraint(equalTo: self.scrollView.bottomAnchor, constant: -32)
+            
         ])
     }
     

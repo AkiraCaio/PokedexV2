@@ -11,6 +11,7 @@ import UIKit
 class HomeScreenViewModel {
     
     let menuChoice: [EscolhaMenuEnum] = [.Pokedex, .Moves, .Abilites, .Items, .Locations, .TypeCharts]
+    let news: [NewsModel] = NewsUtil.createNews()
     
     func configScrollView(scrollView: UIScrollView) {
         scrollView.backgroundColor = ColorName.baseScreenMainBackgroundColor.color
@@ -72,7 +73,11 @@ class HomeScreenViewModel {
     
     func configCollectionView(collectionView: UICollectionView) {
         collectionView.backgroundColor = .clear
-        
+    }
+    
+    func configTableView(tableView: UITableView) {
+        tableView.backgroundColor = .clear
+        tableView.isScrollEnabled = false
     }
     
 }

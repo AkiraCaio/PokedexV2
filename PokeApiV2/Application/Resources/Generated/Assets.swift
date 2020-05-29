@@ -25,6 +25,8 @@ internal enum Asset {
   internal static let background = ImageAsset(name: "Background")
   internal static let memePokemon1 = ImageAsset(name: "memePokemon 1")
   internal static let pokeball = ImageAsset(name: "pokeball")
+  internal static let newsImage1 = ImageAsset(name: "newsImage1")
+  internal static let newsImage2 = ImageAsset(name: "newsImage2")
 }
 // swiftlint:enable identifier_name line_length nesting type_body_length type_name
 

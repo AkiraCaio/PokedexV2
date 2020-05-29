@@ -61,6 +61,7 @@ class HomeScreenViewController: BaseViewController	 {
         self.viewModel.configMainTitleLabel(label: self.mainTitleLabel)
         self.viewModel.configSearchBar(searchBar: self.searchBar)
         self.viewModel.configCollectionView(collectionView: self.selectMenuCollectionView)
+        self.viewModel.configTableView(tableView: self.bottomTableView)
     }
     
 }
