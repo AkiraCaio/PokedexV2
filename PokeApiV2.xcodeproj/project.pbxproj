@@ -25,6 +25,7 @@
 		A3309FD2247A336400AE4E76 /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3309FD1247A336400AE4E76 /* Fonts.swift */; };
 		A3309FD6247A56E000AE4E76 /*  ImageUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3309FD5247A56E000AE4E76 /*  ImageUtil.swift */; };
 		A37702BD247773CB002EF33B /* BaseScreenCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A37702BC247773CB002EF33B /* BaseScreenCoordinator.swift */; };
+		A3891A6024809A6000A3B057 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3891A5F24809A6000A3B057 /* UIViewExtension.swift */; };
 		A38D8A2624775B4500E4A38F /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = A38D8A2524775B4500E4A38F /* Localizable.strings */; };
 		A38D8A2824775B7900E4A38F /* colors.json in Resources */ = {isa = PBXBuildFile; fileRef = A38D8A2724775B7900E4A38F /* colors.json */; };
 		A38D8A2C24775C2F00E4A38F /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38D8A2924775C2F00E4A38F /* Strings.swift */; };
@@ -75,6 +76,7 @@
 		A3309FD1247A336400AE4E76 /* Fonts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
 		A3309FD5247A56E000AE4E76 /*  ImageUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = " ImageUtil.swift"; sourceTree = "<group>"; };
 		A37702BC247773CB002EF33B /* BaseScreenCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseScreenCoordinator.swift; sourceTree = "<group>"; };
+		A3891A5F24809A6000A3B057 /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 		A38D8A2524775B4500E4A38F /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		A38D8A2724775B7900E4A38F /* colors.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = colors.json; sourceTree = "<group>"; };
 		A38D8A2924775C2F00E4A38F /* Strings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
@@ -220,6 +222,7 @@
 			isa = PBXGroup;
 			children = (
 				A3A0A157247F643500377AD7 /* UISearchBarExtension.swift */,
+				A3891A5F24809A6000A3B057 /* UIViewExtension.swift */,
 			);
 			path = Extesion;
 			sourceTree = "<group>";
@@ -615,6 +618,7 @@
 				A3A0A15B247F720500377AD7 /* EscolhaMenuEnum.swift in Sources */,
 				A3309FD6247A56E000AE4E76 /*  ImageUtil.swift in Sources */,
 				A3F9268E2478FAE3003F444C /* HomeScreenViewModel.swift in Sources */,
+				A3891A6024809A6000A3B057 /* UIViewExtension.swift in Sources */,
 				A3A5F8A62476E80700D95EC5 /* SceneDelegate.swift in Sources */,
 				A30D89E824777990002DDE72 /* Coordinator.swift in Sources */,
 			);

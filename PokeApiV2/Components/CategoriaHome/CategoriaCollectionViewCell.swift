@@ -29,7 +29,7 @@ class CategoriaCollectionViewCell: UICollectionViewCell {
     func bind(viewModel: CategoriaCollectionViewModel) {
         self.viewModel = viewModel
         
-        self.viewModel.configCellView(view: self)
+        self.viewModel.configCellView(mainView: self)
         self.viewModel.configTitle(label: self.titleLabel)
         self.viewModel.configElipseImageView(imageView: self.elipseImageView)
         self.viewModel.configPokebolaImage(imageView: self.pokebolaImage)

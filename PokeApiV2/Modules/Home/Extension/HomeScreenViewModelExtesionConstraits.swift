@@ -79,15 +79,15 @@ extension HomeScreenViewController {
     }
     
     fileprivate func configCollectionViewConstraint() {
-        let heightAdjust = self.view.frame.height / 3.8
+        let heightAdjust = self.view.frame.height / 4
         
         self.selectMenuCollectionView.translatesAutoresizingMaskIntoConstraints = false
         
         self.superiorView.addSubview(self.selectMenuCollectionView)
         NSLayoutConstraint.activate([
-            self.selectMenuCollectionView.leftAnchor.constraint(equalTo: self.superiorView.leftAnchor, constant: 26),
-            self.selectMenuCollectionView.rightAnchor.constraint(equalTo: self.superiorView.rightAnchor, constant: -26),
-            self.selectMenuCollectionView.topAnchor.constraint(equalTo: self.searchBar.bottomAnchor, constant: 40),
+            self.selectMenuCollectionView.leftAnchor.constraint(equalTo: self.superiorView.leftAnchor, constant: 0),
+            self.selectMenuCollectionView.rightAnchor.constraint(equalTo: self.superiorView.rightAnchor, constant: 0),
+            self.selectMenuCollectionView.topAnchor.constraint(equalTo: self.searchBar.bottomAnchor, constant: 32),
             self.selectMenuCollectionView.heightAnchor.constraint(equalToConstant: heightAdjust),
             	
             self.selectMenuCollectionView.bottomAnchor.constraint(equalTo: self.superiorView.bottomAnchor, constant: -32),

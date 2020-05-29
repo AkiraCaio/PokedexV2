@@ -19,9 +19,13 @@ class HomeScreenViewModel {
     func configSuperiorView(view: UIView) {
         view.backgroundColor = .white
         
-        view.layer.cornerRadius = 30
-        view.clipsToBounds = true
         view.layer.maskedCorners = [.layerMinXMaxYCorner, .layerMaxXMaxYCorner]
+        view.cornerRadiusAndShadow(
+            cornerRadius: 30,
+            shadowColor: UIColor.gray.cgColor,
+            heightShadowOffset: 2,
+            shadowOpacity: 0.3
+        )
     }
     
     func configPokebolaImageView(imageView: UIImageView) {

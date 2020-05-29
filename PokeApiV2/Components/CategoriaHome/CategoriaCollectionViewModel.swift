@@ -15,24 +15,17 @@ class CategoriaCollectionViewModel {
         self.menuEscolhido = menuEscolhido
     }
     
-    func configCellView(view: UIView) {
-        view.backgroundColor = menuEscolhido.getBackgroundColor()
+    func configCellView(mainView: UIView) {
+
+        mainView.backgroundColor = menuEscolhido.getBackgroundColor()
         
-        view.layer.cornerRadius = 15
-        view.layer.borderWidth = 1.0
-
-        view.layer.borderColor = UIColor.clear.cgColor
-        view.layer.masksToBounds = true
-
-        view.layer.shadowColor = self.menuEscolhido.getShadowCardColor()
-        view.layer.shadowOffset = CGSize(width: 0, height: 5)
-        view.layer.shadowRadius = 3
-        view.layer.shadowOpacity = 0.6
-        view.layer.masksToBounds = false
-        view.layer.shadowPath = UIBezierPath(
-            roundedRect:view.bounds,
-            cornerRadius:view.layer.cornerRadius
-        ).cgPath
+        mainView.cornerRadiusAndShadow(
+            cornerRadius: 12,
+            shadowColor: self.menuEscolhido.getShadowCardColor(),
+            heightShadowOffset: 4,
+            shadowOpacity: 0.8
+        )
+        
     }
     
     func configTitle(label: UILabel) {
