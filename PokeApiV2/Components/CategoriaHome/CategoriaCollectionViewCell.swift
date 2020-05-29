@@ -15,6 +15,12 @@ class CategoriaCollectionViewCell: UICollectionViewCell {
     lazy var pokebolaImage: UIImageView = UIImageView()
     
     var viewModel: CategoriaCollectionViewModel!
+        
+    override var isSelected: Bool {
+        didSet  {
+            self.viewModel.configSelectionMode(view: self, isSelected: isSelected)
+        }
+    }
     
     override init(frame: CGRect) {
         super.init(frame: frame)

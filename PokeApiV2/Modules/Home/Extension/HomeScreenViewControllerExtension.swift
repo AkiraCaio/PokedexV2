@@ -9,7 +9,7 @@
 import UIKit
 
 extension HomeScreenViewController: UICollectionViewDelegateFlowLayout, UICollectionViewDataSource {
-    
+    func configDelegateAndRegisterCells() {
     func configCollectionView() {
         self.selectMenuCollectionView.delegate = self
         self.selectMenuCollectionView.dataSource = self
@@ -40,7 +40,22 @@ extension HomeScreenViewController: UICollectionViewDelegateFlowLayout, UICollec
         
         return cell
     }
-
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        guard lastSelectedIndexPathCollectionView != indexPath else {
+            return
+        }
+        
+        if lastSelectedIndexPathCollectionView != nil {
+            collectionView.deselectItem(at: lastSelectedIndexPathCollectionView!, animated: false)
+        }
+        
+        print("Selected:\(indexPath) - \(self.viewModel.menuChoice[indexPath.row].getTitle())")
+        let selectedCell = collectionView.cellForItem(at: indexPath) as! CategoriaCollectionViewCell
+        selectedCell.isSelected = true
+        lastSelectedIndexPathCollectionView = indexPath
+    }
+    
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
         return 12
     }

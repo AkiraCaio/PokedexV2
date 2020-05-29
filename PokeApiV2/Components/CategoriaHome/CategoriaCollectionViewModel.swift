@@ -48,4 +48,11 @@ class CategoriaCollectionViewModel {
         
         imageView.alpha = 0.4
     }
+    
+    func configSelectionMode(view: UIView, isSelected: Bool) {
+        UIView.animate(withDuration: 0.5) {
+            view.backgroundColor = isSelected ? UIColor.black : self.menuEscolhido.getBackgroundColor()
+
+        }
+    }
 }

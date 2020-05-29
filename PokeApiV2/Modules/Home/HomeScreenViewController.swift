@@ -9,6 +9,7 @@
 import UIKit
 
 class HomeScreenViewController: BaseViewController	 {
+    var lastSelectedIndexPathCollectionView:IndexPath?
 
     //MARK: CONFIG DEFAULT
     weak var coordinator: BaseScreenCoordinator?
@@ -47,7 +48,7 @@ class HomeScreenViewController: BaseViewController	 {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.configCollectionView()
+        self.configDelegateAndRegisterCells()
         self.configScreen()
         self.configLayout()
     
