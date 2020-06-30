@@ -11,7 +11,7 @@ colors:
       templateName: swift4
       output: Colors.swift
 strings:
-  inputs: Application/Resources/Generators/Localizable.strings
+  inputs: Application/Resources/Generators/en.lproj/Localizable.strings
   outputs:
     templateName: structured-swift4
     output: Strings.swift

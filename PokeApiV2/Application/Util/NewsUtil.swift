@@ -14,6 +14,7 @@ public class NewsUtil {
         var array: [NewsModel] = []
         
         let dateFormatterGet = DateFormatter()
+        dateFormatterGet.locale = Locale(identifier: "en_US_POSIX")
         dateFormatterGet.dateFormat = "yyyy-MM-dd HH:mm:ss"
 
         array.append(NewsModel(

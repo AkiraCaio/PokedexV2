@@ -1,0 +1,11 @@
+"baseScreen.title.firstSection" = "Qual pokemon voce esta procurando?";
+"baseScreen.title.secoundSection" = "Pokémon News";
+
+"baseScreen.searchBar.placeholder" = "Procure Pokemon, Movimentos, Abilidades etc";
+
+"baseScreen.categoria.titulo.pokedex" = "Pokedex";
+"baseScreen.categoria.titulo.abilities" = "Abilidades";
+"baseScreen.categoria.titulo.moves" = "Movimentos";
+"baseScreen.categoria.titulo.items" = "Items";
+"baseScreen.categoria.titulo.locations" = "Localizacao";
+"baseScreen.categoria.titulo.typeCharts" = "Grafico de tipos";
