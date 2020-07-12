@@ -38,6 +38,8 @@ internal enum L10n {
       internal static let firstSection = L10n.tr("Localizable", "baseScreen.title.firstSection")
       /// Pokémon News
       internal static let secoundSection = L10n.tr("Localizable", "baseScreen.title.secoundSection")
+      /// View All
+      internal static let viewAll = L10n.tr("Localizable", "baseScreen.title.viewAll")
     }
   }
 }

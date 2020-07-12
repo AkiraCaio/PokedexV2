@@ -110,5 +110,4 @@ extension HomeScreenViewController {
         ])
     }
     
-    
 }

@@ -1,5 +1,6 @@
 "baseScreen.title.firstSection" = "What Pokemon\nare you looking for?";
 "baseScreen.title.secoundSection" = "Pokémon News";
+"baseScreen.title.viewAll" = "View All";
 
 "baseScreen.searchBar.placeholder" = "Search Pokemon, Move, Ability etc";
 
@@ -9,4 +10,3 @@
 "baseScreen.categoria.titulo.items" = "Items";
 "baseScreen.categoria.titulo.locations" = "Locations";
 "baseScreen.categoria.titulo.typeCharts" = "Type Charts";
-

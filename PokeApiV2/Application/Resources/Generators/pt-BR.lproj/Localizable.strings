@@ -1,5 +1,6 @@
 "baseScreen.title.firstSection" = "Qual pokemon voce esta procurando?";
 "baseScreen.title.secoundSection" = "Pokémon News";
+"baseScreen.title.viewAll" = "Ver todos";
 
 "baseScreen.searchBar.placeholder" = "Procure Pokemon, Movimentos, Abilidades etc";
 

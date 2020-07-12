@@ -10,7 +10,7 @@ import UIKit
 
 class HomeScreenViewController: BaseViewController	 {
     var lastSelectedIndexPathCollectionView:IndexPath?
-
+    
     //MARK: CONFIG DEFAULT
     weak var coordinator: BaseScreenCoordinator?
     var viewModel: HomeScreenViewModel!
@@ -50,7 +50,7 @@ class HomeScreenViewController: BaseViewController	 {
         
         self.startScreen()
         self.configLayout()
-    
+        
     }
     
     fileprivate func startScreen() {
@@ -132,12 +132,16 @@ class HomeScreenViewController: BaseViewController	 {
     }
     
     fileprivate func configDelegateAndRegisterCells() {
-          self.selectMenuCollectionView.delegate = self
-          self.selectMenuCollectionView.dataSource = self
-          self.selectMenuCollectionView.register(CategoriaCollectionViewCell.self, forCellWithReuseIdentifier: "cell")
-          
-          self.bottomTableView.delegate = self
-          self.bottomTableView.dataSource = self
-          self.bottomTableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
-      }
+        self.selectMenuCollectionView.delegate = self
+        self.selectMenuCollectionView.dataSource = self
+        self.selectMenuCollectionView.register(CategoriaCollectionViewCell.self, forCellWithReuseIdentifier: "cell")
+        
+        self.bottomTableView.delegate = self
+        self.bottomTableView.dataSource = self
+        self.bottomTableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
+    }
+    
+    @objc func viewAll() {
+        print("press view all news")
+    }
 }

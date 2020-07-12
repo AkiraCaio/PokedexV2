@@ -19,6 +19,9 @@ internal struct ColorName {
   internal let rgbaValue: UInt32
   internal var color: Color { return Color(named: self) }
 
+  /// <span style="display:block;width:3em;height:2em;border:1px solid black;background:#6c79db"></span>
+  /// Alpha: 100% <br/> (0x6c79dbff)
+  internal static let linkColor = ColorName(rgbaValue: 0x6c79dbff)
   /// <span style="display:block;width:3em;height:2em;border:1px solid black;background:#58abf6"></span>
   /// Alpha: 100% <br/> (0x58abf6ff)
   internal static let baseScreenCategoriasBackgroundColorAbilities = ColorName(rgbaValue: 0x58abf6ff)
