@@ -25,6 +25,7 @@
 		A3309FD2247A336400AE4E76 /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3309FD1247A336400AE4E76 /* Fonts.swift */; };
 		A3309FD6247A56E000AE4E76 /*  ImageUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3309FD5247A56E000AE4E76 /*  ImageUtil.swift */; };
 		A375380524C4113B00021335 /* NewsHomeTableViewCellExtensionContraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = A375380424C4113B00021335 /* NewsHomeTableViewCellExtensionContraint.swift */; };
+		A375380924C417BB00021335 /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A375380824C417BB00021335 /* DateExtension.swift */; };
 		A37702BD247773CB002EF33B /* BaseScreenCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A37702BC247773CB002EF33B /* BaseScreenCoordinator.swift */; };
 		A3891A6024809A6000A3B057 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3891A5F24809A6000A3B057 /* UIViewExtension.swift */; };
 		A3891A632480A2A500A3B057 /* NewsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3891A622480A2A500A3B057 /* NewsModel.swift */; };
@@ -80,6 +81,7 @@
 		A3309FD1247A336400AE4E76 /* Fonts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
 		A3309FD5247A56E000AE4E76 /*  ImageUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = " ImageUtil.swift"; sourceTree = "<group>"; };
 		A375380424C4113B00021335 /* NewsHomeTableViewCellExtensionContraint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsHomeTableViewCellExtensionContraint.swift; sourceTree = "<group>"; };
+		A375380824C417BB00021335 /* DateExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
 		A37702BC247773CB002EF33B /* BaseScreenCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseScreenCoordinator.swift; sourceTree = "<group>"; };
 		A3891A5F24809A6000A3B057 /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 		A3891A622480A2A500A3B057 /* NewsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsModel.swift; sourceTree = "<group>"; };
@@ -230,6 +232,7 @@
 		A3309FD3247A3AD700AE4E76 /* Extesion */ = {
 			isa = PBXGroup;
 			children = (
+				A375380824C417BB00021335 /* DateExtension.swift */,
 				A3A0A157247F643500377AD7 /* UISearchBarExtension.swift */,
 				A3891A5F24809A6000A3B057 /* UIViewExtension.swift */,
 			);
@@ -240,8 +243,8 @@
 			isa = PBXGroup;
 			children = (
 				A3309FD5247A56E000AE4E76 /*  ImageUtil.swift */,
-				A3A0A159247F71E600377AD7 /* Enum */,
 				A3891A642480A43600A3B057 /* NewsUtil.swift */,
+				A3A0A159247F71E600377AD7 /* Enum */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -651,6 +654,7 @@
 				A32F64C7247756F700AFF797 /* HomeScreenViewController.swift in Sources */,
 				A38D8A3024775F2700E4A38F /* DefaultContainer.swift in Sources */,
 				A375380524C4113B00021335 /* NewsHomeTableViewCellExtensionContraint.swift in Sources */,
+				A375380924C417BB00021335 /* DateExtension.swift in Sources */,
 				A30DC202247FA9C000AFF95D /* CategoriaCollectionViewCellExtensionConstraits.swift in Sources */,
 				A3309FD2247A336400AE4E76 /* Fonts.swift in Sources */,
 				A3891A632480A2A500A3B057 /* NewsModel.swift in Sources */,

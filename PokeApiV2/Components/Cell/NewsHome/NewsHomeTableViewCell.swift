@@ -16,6 +16,7 @@ class NewsHomeTableViewCell: UITableViewCell {
         label.text = "Pokémon Rumble Rush Arrives Soon"
         label.font = FontFamily.CircularStd.bold.font(size: 14)
         label.textColor = ColorName.baseScreenMainTextColor.color
+        label.numberOfLines = 0
         
         return label
     }()
@@ -48,13 +49,17 @@ class NewsHomeTableViewCell: UITableViewCell {
         fatalError("init(coder:) has not been implemented")
     }
     
-    //TODO
-    func bind() {
-        
+    func bind(titulo: String, horario: String, image: UIImage) {
+        self.titulo.text = titulo
+        self.horario.text = horario
+        self.imagemNews.image = image
     }
     
     private func initScreen() {
         self.backgroundColor = .clear
         self.selectionStyle = .none
+        
+        self.imagemNews.layer.cornerRadius = 20
+        self.imagemNews.clipsToBounds = true
     }
 }
