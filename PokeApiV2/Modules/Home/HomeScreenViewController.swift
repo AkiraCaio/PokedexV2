@@ -128,7 +128,8 @@ class HomeScreenViewController: BaseViewController	 {
     
     fileprivate func startTableView() {
         self.bottomTableView.backgroundColor = .clear
-        self.bottomTableView.isScrollEnabled = false
+        self.bottomTableView.separatorStyle = .none
+        self.bottomTableView.showsVerticalScrollIndicator = false
     }
     
     fileprivate func configDelegateAndRegisterCells() {
@@ -138,10 +139,11 @@ class HomeScreenViewController: BaseViewController	 {
         
         self.bottomTableView.delegate = self
         self.bottomTableView.dataSource = self
-        self.bottomTableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
+        self.bottomTableView.register(NewsHomeTableViewCell.self, forCellReuseIdentifier: "cell")
     }
     
     @objc func viewAll() {
+        self.bottomTableView.layoutIfNeeded() // forca a atualizacao do feedback visual do buttao
         print("press view all news")
     }
 }
