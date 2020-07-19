@@ -16,8 +16,11 @@ class BaseScreenCoordinator: NSObject, Coordinator {
     var navigationController: UINavigationController
     var defaultContainer: DefaultContainer
     
-    //All controller going here
+    //root controller
     var baseController: HomeScreenViewController!
+    
+    //chield Controller
+    var pokedexController: PokedexViewController!
     
     init(navigationController: UINavigationController, defaultContainer: DefaultContainer) {
         self.navigationController = navigationController
@@ -27,8 +30,16 @@ class BaseScreenCoordinator: NSObject, Coordinator {
     func start() {
         self.baseController = HomeScreenViewController()
         self.baseController.viewModel = HomeScreenViewModel()
+        self.baseController.coordinator = self
         
         self.navigationController.pushViewController(self.baseController, animated: true)
+    }
+    
+    //MARK: Show
+    func showPokedex() {
+        pokedexController = PokedexViewController()
+        
+        self.navigationController.pushViewController(pokedexController, animated: true)
     }
 
 }

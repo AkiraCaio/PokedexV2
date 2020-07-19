@@ -42,6 +42,11 @@ internal enum L10n {
       internal static let viewAll = L10n.tr("Localizable", "baseScreen.title.viewAll")
     }
   }
+
+  internal enum Pokedex {
+    /// Pokedex
+    internal static let title = L10n.tr("Localizable", "pokedex.title")
+  }
 }
 // swiftlint:enable explicit_type_interface function_parameter_count identifier_name line_length
 // swiftlint:enable nesting type_body_length type_name

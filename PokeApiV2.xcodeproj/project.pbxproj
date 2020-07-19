@@ -26,6 +26,7 @@
 		A3309FD6247A56E000AE4E76 /*  ImageUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3309FD5247A56E000AE4E76 /*  ImageUtil.swift */; };
 		A375380524C4113B00021335 /* NewsHomeTableViewCellExtensionContraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = A375380424C4113B00021335 /* NewsHomeTableViewCellExtensionContraint.swift */; };
 		A375380924C417BB00021335 /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A375380824C417BB00021335 /* DateExtension.swift */; };
+		A375380E24C41B3500021335 /* PokedexViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A375380D24C41B3500021335 /* PokedexViewController.swift */; };
 		A37702BD247773CB002EF33B /* BaseScreenCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A37702BC247773CB002EF33B /* BaseScreenCoordinator.swift */; };
 		A3891A6024809A6000A3B057 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3891A5F24809A6000A3B057 /* UIViewExtension.swift */; };
 		A3891A632480A2A500A3B057 /* NewsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3891A622480A2A500A3B057 /* NewsModel.swift */; };
@@ -82,6 +83,7 @@
 		A3309FD5247A56E000AE4E76 /*  ImageUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = " ImageUtil.swift"; sourceTree = "<group>"; };
 		A375380424C4113B00021335 /* NewsHomeTableViewCellExtensionContraint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsHomeTableViewCellExtensionContraint.swift; sourceTree = "<group>"; };
 		A375380824C417BB00021335 /* DateExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
+		A375380D24C41B3500021335 /* PokedexViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokedexViewController.swift; sourceTree = "<group>"; };
 		A37702BC247773CB002EF33B /* BaseScreenCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseScreenCoordinator.swift; sourceTree = "<group>"; };
 		A3891A5F24809A6000A3B057 /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 		A3891A622480A2A500A3B057 /* NewsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsModel.swift; sourceTree = "<group>"; };
@@ -257,6 +259,30 @@
 			path = Extension;
 			sourceTree = "<group>";
 		};
+		A375380A24C41AAB00021335 /* Pokedex */ = {
+			isa = PBXGroup;
+			children = (
+				A375380D24C41B3500021335 /* PokedexViewController.swift */,
+			);
+			path = Pokedex;
+			sourceTree = "<group>";
+		};
+		A375380B24C41AF900021335 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				A3A0A178247F8A3000377AD7 /* CategoriaHome */,
+				A3D7385F24BB95B900C25BBA /* NewsHome */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		A375380C24C41B0400021335 /* Pokedex */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Pokedex;
+			sourceTree = "<group>";
+		};
 		A37702BB247773AD002EF33B /* BaseScreen */ = {
 			isa = PBXGroup;
 			children = (
@@ -395,6 +421,7 @@
 				A3F9268B2478F6FB003F444C /* LaunchScreen */,
 				A3A0A17B247F9B2900377AD7 /* BaseScreen */,
 				A32F64C12477554000AFF797 /* Home */,
+				A375380A24C41AAB00021335 /* Pokedex */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -422,8 +449,8 @@
 		A3D7385E24BB95AA00C25BBA /* Cell */ = {
 			isa = PBXGroup;
 			children = (
-				A3D7385F24BB95B900C25BBA /* NewsHome */,
-				A3A0A178247F8A3000377AD7 /* CategoriaHome */,
+				A375380C24C41B0400021335 /* Pokedex */,
+				A375380B24C41AF900021335 /* Home */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -664,6 +691,7 @@
 				A38D8A2C24775C2F00E4A38F /* Strings.swift in Sources */,
 				A37702BD247773CB002EF33B /* BaseScreenCoordinator.swift in Sources */,
 				A3309FBD247A2F2900AE4E76 /* HomeScreenViewModelExtesionConstraits.swift in Sources */,
+				A375380E24C41B3500021335 /* PokedexViewController.swift in Sources */,
 				A3A0A177247F895000377AD7 /* HomeScreenViewControllerExtension.swift in Sources */,
 				A38D8A2D24775C2F00E4A38F /* Assets.swift in Sources */,
 				A3A0A175247F840D00377AD7 /* Colors.swift in Sources */,

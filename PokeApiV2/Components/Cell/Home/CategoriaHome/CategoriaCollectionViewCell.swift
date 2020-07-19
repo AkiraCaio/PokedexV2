@@ -16,11 +16,11 @@ class CategoriaCollectionViewCell: UICollectionViewCell {
     
     var viewModel: CategoriaCollectionViewModel!
         
-    override var isSelected: Bool {
-        didSet  {
-            self.viewModel.configSelectionMode(view: self, isSelected: isSelected)
-        }
-    }
+//    override var isSelected: Bool {
+//        didSet  {
+//            self.viewModel.configSelectionMode(view: self, isSelected: isSelected)
+//        }
+//    }
     
     override init(frame: CGRect) {
         super.init(frame: frame)

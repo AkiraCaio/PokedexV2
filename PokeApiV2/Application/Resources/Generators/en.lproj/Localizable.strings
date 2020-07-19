@@ -10,3 +10,5 @@
 "baseScreen.categoria.titulo.items" = "Items";
 "baseScreen.categoria.titulo.locations" = "Locations";
 "baseScreen.categoria.titulo.typeCharts" = "Type Charts";
+
+"pokedex.title" = "Pokedex";

@@ -34,18 +34,22 @@ extension HomeScreenViewController: UICollectionViewDelegateFlowLayout, UICollec
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        guard lastSelectedIndexPathCollectionView != indexPath else {
-            return
+//        guard lastSelectedIndexPathCollectionView != indexPath else {
+//            return
+//        }
+//
+//        if lastSelectedIndexPathCollectionView != nil {
+//            collectionView.deselectItem(at: lastSelectedIndexPathCollectionView!, animated: false)
+//        }
+//
+//        print("Selected:\(indexPath) - \(self.viewModel.menuChoice[indexPath.row].getTitle())")
+//        let selectedCell = collectionView.cellForItem(at: indexPath) as! CategoriaCollectionViewCell
+//        selectedCell.isSelected = true
+//        lastSelectedIndexPathCollectionView = indexPath
+//
+        if (self.viewModel.menuChoice[indexPath.row] == EscolhaMenuEnum.Pokedex) {
+            self.coordinator?.showPokedex()
         }
-        
-        if lastSelectedIndexPathCollectionView != nil {
-            collectionView.deselectItem(at: lastSelectedIndexPathCollectionView!, animated: false)
-        }
-        
-        print("Selected:\(indexPath) - \(self.viewModel.menuChoice[indexPath.row].getTitle())")
-        let selectedCell = collectionView.cellForItem(at: indexPath) as! CategoriaCollectionViewCell
-        selectedCell.isSelected = true
-        lastSelectedIndexPathCollectionView = indexPath
     }
     
 
